@@ -9,7 +9,7 @@ country: "za"      # lowercase two-letter ISO country code such as "fr" (see htt
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the workshop
 latitude: "-33.932106"        # decimal latitude of workshop venue (use https://www.latlong.net/)
 longitude: "18.860151"       # decimal longitude of the workshop venue (use https://www.latlong.net)
-humandate: "October 3-7, 2022"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humandate: "3-7 October, 2022"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "8:30 am - 1:00 pm (UTC+2)"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
 startdate: 2022-10-03      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2022-10-07        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
@@ -357,10 +357,10 @@ of code below the Schedule `<h2>` header below with
 `{% include custom-schedule.html %}`.
 {% endcomment %}
 
-<h2 id="custom-schedule">Schedule</h2>
+<h2 id="schedule">Schedule</h2>
 
 {% if site.carpentry == "swc" %}
-{% include swc/schedule.html %}
+{% include custom-schedule.html %}
 {% elsif site.carpentry == "dc" %}
 {% include dc/schedule.html %}
 {% elsif site.carpentry == "lc" %}
